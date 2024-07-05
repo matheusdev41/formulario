@@ -1,4 +1,4 @@
-<!--
+
  
 <?php 
 //verificando se o formulario foi submitado
@@ -7,17 +7,36 @@
 
 if(isset($_POST['submit'])) {
 
-    print_r('Nome ' . $_POST['nome']);
-    print_r('<br>');
-    print_r('Sobrenome ' . $_POST['sobrenome']);
-    print_r('<br>');
-    print_r('Email ' . $_POST['email']);
+    //testar se as variávis estão funcionando
+    // print_r('Nome: ' . $_POST['nome']);
+    // print_r('<br>');
+    // print_r('Sobrenome: ' . $_POST['sobrenome']);
+    // print_r('<br>');
+    // print_r('Email: ' . $_POST['email']);
+    // print_r('<br>');
+    // print_r('Endereço: '. $_POST['endereco']);
+    // print_r('<br>');
+    // print_r('Número: ' . $_POST['numero']);
+    // print_r('<br>');
+    // print_r('telefone: ' . $_POST['telefone']);
+    // print_r('<br>');
+    // print_r('cep: ' . $_POST['cep']);
+    // print_r('<br>');
+    // print_r('sexo: ' . $_POST['sexo']);
 
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+    $email = $_POST['email'];
+    $endereco = $_POST['endereco'];
+    $numero = $_POST['numero'];
+    $telefone = $_POST['telefone'];
+    $cep = $_POST['cep'];
+    $sexo = $_POST['sexo'];
 }
 
 
 ?>
--->
+
 
 
 <!DOCTYPE html>

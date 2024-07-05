@@ -3,7 +3,6 @@ const campos = document.querySelectorAll(".required");
 const aRequired = document.querySelectorAll(".error");
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
     nameValidate();
     sobrenomeValidate();
 })

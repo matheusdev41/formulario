@@ -3,7 +3,7 @@
 $host = 'localhost';
 $username = 'root';
 $pass = '';
-$database = 'formularioteste';
+$database = 'formulario-clientes';
 
 //conexão feita com o database
 $conexao = new mysqli($host, $username, $pass, $database);
@@ -17,6 +17,4 @@ if($conexao->connect_errno){
     echo "conexão efetuada com sucesso";
 }
 
-*/
-
-?>
+/*
