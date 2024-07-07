@@ -24,6 +24,9 @@ if(isset($_POST['submit'])) {
     // print_r('<br>');
     // print_r('sexo: ' . $_POST['sexo']);
 
+//incluindo arquivo de conexão
+    include_once('conexao.php');
+
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
@@ -32,6 +35,9 @@ if(isset($_POST['submit'])) {
     $telefone = $_POST['telefone'];
     $cep = $_POST['cep'];
     $sexo = $_POST['sexo'];
+
+ // variável de conexão
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,sobrenome,email,endereco,numero,telefone,cep,sexo) VALUES ('$nome','$sobrenome','$email','$endereco','$numero','$telefone','$cep','$sexo')");
 }
 
 

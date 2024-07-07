@@ -3,18 +3,18 @@
 $host = 'localhost';
 $username = 'root';
 $pass = '';
-$database = 'formulario-clientes';
+$database = 'formularioteste';
 
 //conexão feita com o database
 $conexao = new mysqli($host, $username, $pass, $database);
 
-/*
-teste para verificar conexão com o database
 
-if($conexao->connect_errno){
-    echo "erro";
-} else {
-    echo "conexão efetuada com sucesso";
-}
+//teste para verificar conexão com o database
 
-/*
+//if($conexao->connect_errno){
+//    echo "erro";
+//} else {
+//    echo "conexão efetuada com sucesso";
+//}
+
+?>
